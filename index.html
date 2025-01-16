@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- Section to input user name -->
+    <div id="nameInputSection">
+      <h2>Mamlakatlar poytaxtni topadigan qiziqarli quizga xush kelibsiz</h2>
+      <p class="Qiziqarli">Qiziqarli quizni boshlash uchun ismingizni kiriting</p>
+      <input type="text" id="userNameInput" placeholder="Ismingizni kiriting" />
+      <br />
+      <button id="startGame">O'yinni boshlash</button>
+    </div>
+
+    <!-- Section for the quiz -->
+    <div id="quizSection" class="hidden">
+      <div id="vaqt">
+        <h3>score: <span id="score">0</span></h3>
+        <p id="timer">Qolgan vaqt: 15</p>
+        <p id="questionCounter">Savol: 0 : 10</p>
+        <div class="container-quiz" id="containerQuiz"></div>
+      </div>
+      <div id="ota">
+        <p id="message"></p>
+        <div class="eshmat">
+          <button id="playAgain" class="hidden">Qayta o'ynang</button>
+          <button id="viewPlayers" class="hidden">Barcha o'yinchilarni ko'rish</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

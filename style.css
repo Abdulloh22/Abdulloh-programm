@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* background-color: #f0f0f0; */
+    background: url(https://static.vecteezy.com/system/resources/previews/006/691/884/non_2x/blue-question-mark-background-with-text-space-quiz-symbol-vector.jpg) no-repeat center/cover;
+    height: 100vh;
+  }
+  
+  #nameInputSection{
+    margin-top: 20px;
+    background: #FFFAF0;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 40px;
+  }
+ 
+  #ota {
+    /* margin-top: 100px; */
+    background-color: #F0E68C;
+    max-width: 350px;
+    border-radius: 20px;
+    margin: 100px auto;
+    padding: 30px 15px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .container-quizapi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#FFFAF0;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 15px;
+  }
+  
+  .container-quizapi h1 {
+    font-size: 24px;
+  }
+  
+  .container-quizapi img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .answer-child button {
+    padding: 15px 50px;
+    margin: 10px;
+    border: none;
+    /* background-color: #007bff; */
+    background-color: #0000CD;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  
+  .answer-child button.correct {
+    background-color: #28a745;
+  }
+  
+  .answer-child button.incorrect {
+    background-color: #dc3545;
+  }
+  
+  .eshmat {
+    margin-top: 20px;
+  }
+  
+  .eshmat button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  #startGame{
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
+  }
+
+  #userNameInput{
+    padding: 10px 50px 10px 5px;
+    border-radius: 10px;
+  }
+
+  #score, h3{
+    color: white;
+  }
+
+  #timer{
+    color: white;
+  }
+
+  #questionCounter{
+    color: white;
+  }
+
+  .answer-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    border-radius: 10px;
+  }
+
+
+  button, .option{
+    /* display: inline-block; */
+    margin: 5px;
+    /* padding: 10px 20px; */
+    background-color: lightgray;
+    /* border: none; */
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 50px 30px;
+  }
+
+#message{
+    line-height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
