@@ -20,7 +20,7 @@ const startOta = document.getElementById('ota');
 const questionCounterElement = document.getElementById('questionCounter');
 
 startGameButton.addEventListener('click', () => {
-    userName = userNameInput.value.trim();
+    userName = userNameInput.value;
     if (userName) {
         nameInputSection.classList.add('hidden');
         quizSection.classList.remove('hidden');
@@ -29,7 +29,7 @@ startGameButton.addEventListener('click', () => {
                 countries = response.data;
                 startGame();
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => console.error('nimadur xatolik ketib qolibdi', error));
     } else {
         alert('Iltimos, ismingizni kiriting!');
     }
